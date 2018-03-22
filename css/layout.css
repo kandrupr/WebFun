@@ -3,50 +3,165 @@ html, body, div{
     padding: 0;
 }
 
-.full{
-    height:100vh;
-    width: 100%;
+/* Desktops and laptops */
+@media only screen
+and (min-width : 1224px) {
+    .full {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .page {
+        height: 100vh;
+        width: 96%;
+        float: right;
+    }
+
+    .pageHalf {
+        height: 100vh;
+        width: 50%;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .b {
+        background-color: blue;
+    }
+
+    .r {
+        background-color: red;
+    }
+
+    .g {
+        background-color: green;
+    }
+
+    .y {
+        background-color: yellow;
+    }
+
+    #nav_bar {
+        background-color: black;
+        top: 0;
+        left: 0;
+        position: fixed;
+        height: 100vh;
+        min-width: 4%;
+    }
 }
 
-.page{
-    height: 100vh;
-    width: 96%;
-    float: right;
+/* iPads (portrait) */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    .full {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .page {
+        height: 100vh;
+        width: 90%;
+        float: right;
+    }
+
+    .pageHalf {
+        height: 100vh;
+        width: 50%;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .b {
+        background-color: blue;
+    }
+
+    .r {
+        background-color: red;
+    }
+
+    .g {
+        background-color: green;
+    }
+
+    .y {
+        background-color: orange;
+    }
+
+    #nav_bar {
+        background-color: black;
+        top: 0;
+        left: 0;
+        position: fixed;
+        height: 100vh;
+        min-width: 10%;
+    }
 }
 
-.pageHalf{
-    height: 100vh;
-    width: 50%;
-}
+/* iPads (landscape) */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    .full {
+        height: 100vh;
+        width: 100%;
+    }
 
-.right{
-    float: right;
-}
+    .page {
+        height: 100vh;
+        width: 90%;
+        float: right;
+    }
 
-.left{
-    float: left;
-}
-.b{
-    background-color: blue;
-}
+    .pageHalf {
+        height: 100vh;
+        width: 50%;
+    }
 
-.r{
-    background-color: red;
-}
+    .right {
+        float: right;
+    }
 
-.g{
-    background-color: green;
-}
+    .left {
+        float: left;
+    }
 
-.y{
-    background-color: yellow;
-}
+    .b {
+        background-color: blue;
+    }
 
-#nav_bar {
-    background-color: black;
-    top: 0;
-    left: 0;
-    position: fixed;
-    height: 100vh;
-    min-width:4%;
+    .r {
+        background-color: red;
+    }
+
+    .g {
+        background-color: green;
+    }
+
+    .y {
+        background-color: yellow;
+    }
+
+    #nav_bar {
+        background-color: black;
+        top: 0;
+        left: 0;
+        position: fixed;
+        height: 100vh;
+        min-width: 10%;
+    }
 }
