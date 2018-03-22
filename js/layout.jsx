@@ -5,14 +5,15 @@ class Layout extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className="full">
-                    <div className="half r" style={{float:"left"}}></div>
-                    <div className="half b" style={{float:"right"}}></div>
+            <div className="full">
+                <div id="nav_bar"></div>
+                <div className="page">
+                    <div className="pageHalf left r"></div>
+                    <div className="pageHalf right b"></div>
                 </div>
-                <div className="full">
-                    <div className="half g" style={{float:"left"}}></div>
-                    <div className="half y" style={{float:"right"}}></div>
+                <div className="page">
+                    <div className="pageHalf left g"></div>
+                    <div className="pageHalf right y"></div>
                 </div>
             </div>
         );
