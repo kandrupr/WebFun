@@ -3,6 +3,13 @@ html, body, div{
     padding: 0;
 }
 
+#nav_bar {
+    background-color: black;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
 .full {
     height: 100vh;
     width: 100%;
@@ -34,7 +41,7 @@ html, body, div{
 
 /* Desktops and laptops */
 @media only screen
-and (min-width : 1224px) {
+and (min-width : 600px) {
     .page {
         height: 100vh;
         width: 96%;
@@ -47,10 +54,6 @@ and (min-width : 1224px) {
     }
 
     #nav_bar {
-        background-color: black;
-        top: 0;
-        left: 0;
-        position: fixed;
         height: 100vh;
         min-width: 4%;
     }
@@ -74,10 +77,6 @@ and (orientation : portrait) {
     }
 
     #nav_bar {
-        background-color: green;
-        top: 0;
-        left: 0;
-        position: fixed;
         height: 100vh;
         min-width: 12.5%;
     }
@@ -101,10 +100,6 @@ and (orientation : landscape) {
     }
 
     #nav_bar {
-        background-color: black;
-        top: 0;
-        left: 0;
-        position: fixed;
         height: 100vh;
         min-width: 10%;
     }
@@ -116,23 +111,23 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait) {
     .page {
-        height: 100vh;
-        width: 85%;
+        height: 87.5vh;
+        width: 100%;
         float: right;
     }
 
+    .first {
+        margin-top: 12.5vh;
+    }
+
     .pageHalf {
-        height: 100vh;
+        height: 100%;
         width: 50%;
     }
 
     #nav_bar {
-        background-color: black;
-        top: 0;
-        left: 0;
-        position: fixed;
-        height: 100vh;
-        min-width: 15%;
+        height: 12.5vh;
+        width: 100%;
     }
 }
 
@@ -153,10 +148,6 @@ and (orientation : landscape) {
     }
 
     #nav_bar {
-        background-color: black;
-        top: 0;
-        left: 0;
-        position: fixed;
         height: 100vh;
         min-width: 10%;
     }
@@ -164,34 +155,33 @@ and (orientation : landscape) {
 
 /* Smartphones (portrait) */
 @media only screen
-and (max-width : 500px)
+and (max-width : 600px)
 and (max-width : 850px)
 and (orientation: portrait){
     .page {
-        height: 100vh;
-        width: 90%;
-        float: right;
+        height: 90vh;
+        width: 100%;
+    }
+
+    .first {
+        margin-top: 10vh;
     }
 
     .pageHalf {
-        height: 100vh;
+        height: 100%;
         width: 50%;
     }
 
     #nav_bar {
-        background-color: black;
-        top: 0;
-        left: 0;
-        position: fixed;
-        height: 100vh;
-        min-width: 10%;
+        width: 100vw;
+        height: 10vh;
     }
 }
 
 /* Smartphones (landscape) */
 @media only screen
 and (max-width : 850px)
-and (max-height: 500px)
+and (max-height: 420px)
 and (orientation: landscape){
     .page {
         height: 100vh;
@@ -205,10 +195,6 @@ and (orientation: landscape){
     }
 
     #nav_bar {
-        background-color: black;
-        top: 0;
-        left: 0;
-        position: fixed;
         height: 100vh;
         min-width: 10%;
     }
