@@ -1,4 +1,4 @@
-html, body, div{
+html, body, div, #nav_list{
     margin: 0;
     padding: 0;
 }
@@ -8,6 +8,8 @@ html, body, div{
     top: 0;
     left: 0;
     position: fixed;
+    display: flex;
+    align-items: center
 }
 
 .full {
@@ -37,6 +39,27 @@ html, body, div{
 
 .y {
     background-color: yellow;
+}
+
+.wt {
+    color: white;
+}
+
+.wt:hover {
+    color: green;
+}
+
+.nolist {
+    list-style-type: none;
+}
+
+#nav_list {
+    width: 100%;
+    transform: translate(0, -50%);
+}
+
+#nav_home, #nav_about, #nav_projects {
+    text-align: center;
 }
 
 /* Desktops and laptops */

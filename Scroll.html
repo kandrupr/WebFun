@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scroll off buttons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <script>
+        function goTo(id) {
+            document.getElementById(id).scrollIntoView({behavior: "smooth"});
+        }
+    </script>
+</head>
+<body>
+<div class="full">
+    <div id="nav_bar">
+        <ul id="nav_list">
+            <li id="nav_home" class="wt nolist" onclick="goTo('home')">H</li>
+            <li id="nav_about" class="wt nolist" onclick="goTo('about')">A</li>
+            <li id="nav_projects" class="wt nolist" onclick="goTo('projects')">P</li>
+        </ul>
+    </div>
+    <div id="home" class="page first">
+        <div class="pageHalf left r"></div>
+        <div class="pageHalf right b"></div>
+    </div>
+    <div id="about" class="page g"></div>
+    <div id="projects" class="page y"></div>
+</div>
+</body>
+</html>
