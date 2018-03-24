@@ -12,6 +12,41 @@ html, body, div, #nav_list{
     align-items: center
 }
 
+#nav_list {
+    width: 100%;
+    -webkit-transform: translate(0,-50%);
+    transform: translate(0, -50%);
+}
+
+#nav_home, #nav_about, #nav_projects {
+    text-align: center;
+    transition: ease-out 0.5s;
+}
+
+#nav_home:after {
+    content: "H";
+}
+
+#nav_home:hover:after {
+    content: "HOME";
+}
+
+#nav_about:after {
+    content: "A";
+}
+
+#nav_about:hover:after {
+    content: "ABOUT";
+}
+
+#nav_projects:after {
+    content: "P";
+}
+
+#nav_projects:hover:after {
+    content: "PROJECTS";
+}
+
 .full {
     height: 100vh;
     width: 100%;
@@ -53,15 +88,6 @@ html, body, div, #nav_list{
     list-style-type: none;
 }
 
-#nav_list {
-    width: 100%;
-    transform: translate(0, -50%);
-}
-
-#nav_home, #nav_about, #nav_projects {
-    text-align: center;
-}
-
 /* Desktops and laptops */
 @media only screen
 and (min-width : 600px) {
@@ -78,7 +104,7 @@ and (min-width : 600px) {
 
     #nav_bar {
         height: 100vh;
-        min-width: 4%;
+        width: 4%;
     }
 }
 
