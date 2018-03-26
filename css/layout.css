@@ -20,32 +20,20 @@ html, body, div, #nav_list{
 
 #nav_home, #nav_about, #nav_projects {
     text-align: center;
-    transition: ease-out 0.5s;
+    transition: ease-out 1s;
+}
+#nav_home b, #nav_about b, #nav_projects b{
+    display: none;
 }
 
-#nav_home:after {
-    content: "H";
+#nav_home:hover b, #nav_about:hover b, #nav_projects:hover b{
+    display: block;
 }
 
-#nav_home:hover:after {
-    content: "HOME";
+#nav_home:hover i, #nav_about:hover i, #nav_projects:hover i {
+    display: none;
 }
 
-#nav_about:after {
-    content: "A";
-}
-
-#nav_about:hover:after {
-    content: "ABOUT";
-}
-
-#nav_projects:after {
-    content: "P";
-}
-
-#nav_projects:hover:after {
-    content: "PROJECTS";
-}
 
 .full {
     height: 100vh;
@@ -93,7 +81,7 @@ html, body, div, #nav_list{
 and (min-width : 600px) {
     .page {
         height: 100vh;
-        width: 96%;
+        width: 94%;
         float: right;
     }
 
@@ -104,7 +92,7 @@ and (min-width : 600px) {
 
     #nav_bar {
         height: 100vh;
-        width: 4%;
+        width: 6%;
     }
 }
 
