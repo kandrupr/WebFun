@@ -1,3 +1,3 @@
-#WebFun
+## WebFun
 
-A test repository for all things Web Development.
+A test repository for all things Web Dev.
